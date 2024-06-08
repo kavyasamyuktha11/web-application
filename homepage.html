@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Dashboard</title>
+    <!-- Include Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-auth.js"></script>
+    <!-- Include Firebase configuration -->
+    <script src="firebaseauth.js"></script>
+    <!-- Include custom JavaScript file -->
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Beauty Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card" data-name="Product 1" data-price="19.99">
+                    <img src="https://koreanmartbd.com/wp-content/uploads/2022/04/km-0512-The-face-shop-jeju-aloe-99-Fresh-SoothingGel-300ml.jpg" alt="Product 1">
+                    <h3>Aloe Gel</h3>
+                    <p>$19.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Product 2" data-price="29.99">
+                    <img src="https://i5.walmartimages.com/asr/ae01abb8-7faa-40e3-adf7-3b17c6d5a25d_1.4bc862d5699a6e7e1854bb6fd58cc590.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff" alt="Product 2">
+                    <h3>Aloe Facewash</h3>
+                    <p>$29.99</p> 
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Product 3" data-price="39.99">
+                    <img src="https://www.thefaceshop.com.my/images/HERB%20DAY%20CLEANSING%20FOAM%20ALOE_20180207113815.jpg" alt="Product 3">
+                    <h3>Aloe Foaming Cleanser</h3>
+                    <p>$39.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Beauty Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
